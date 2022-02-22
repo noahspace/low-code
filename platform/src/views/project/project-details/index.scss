@@ -1,0 +1,151 @@
+.project-details {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 230px 1fr;
+  gap: 20px;
+  .project-card {
+    background: #fff;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 286px 1fr;
+    gap: 30px;
+    .project-preview {
+      img {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+      }
+    }
+    .project-title-wrap {
+      display: flex;
+      justify-content: space-between;
+      .l {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .title {
+          color: #333333;
+          h1 {
+            font-size: 24px;
+            margin-bottom: 6px;
+          }
+          p {
+            font-size: 16px;
+          }
+        }
+        .operate {
+          text-align: right;
+        }
+      }
+      .pro-progress {
+        .pro-progress-now {
+          margin-top: 5px;
+          display: flex;
+          justify-content: space-between;
+          color: #666666;
+          i {
+            margin-left: 8px;
+          }
+        }
+        .pro-progress-pic {
+          position: relative;
+          width: 410px;
+          height: 16px;
+          background: url("./images/Union.png") center no-repeat;
+          background-size: contain;
+          .now-pic {
+            position: absolute;
+            width: 86px;
+            height: 16px;
+            background: url("./images/Rectangle 884.png") center no-repeat;
+            background-size: contain;
+          }
+          .now-pic-two {
+            position: absolute;
+            width: 86px;
+            height: 16px;
+            background: url("./images/Rectangle 885.png") center no-repeat;
+            background-size: contain;
+            left: 82px;
+          }
+          .now-pic-three {
+            position: absolute;
+            width: 86px;
+            height: 16px;
+            background: url("./images/Rectangle 886.png") center no-repeat;
+            background-size: contain;
+            left: 164px;
+          }
+          .now-pic-five {
+            position: absolute;
+            width: 86px;
+            height: 16px;
+            background: url("./images/Rectangle 887.png") center no-repeat;
+            background-size: contain;
+            left: 246px;
+          }
+          .now-pic-six {
+            position: absolute;
+            width: 86px;
+            height: 16px;
+            background: url("./images/Rectangle 888.png") center no-repeat;
+            background-size: contain;
+            left: 328px;
+          }
+        }
+      }
+    }
+  }
+  .project-info {
+    background: #fff;
+    display: grid;
+    // overflow: auto;
+    scrollbar-gutter: stable;
+    grid-template-rows: 61px 1fr;
+    .project-main {
+      padding: 20px 20px 0;
+      overflow: hidden;
+    }
+    .edit-btn {
+      color: #1985f1;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      i {
+        color: #1985f1;
+      }
+    }
+  }
+  ::v-deep .el-tabs {
+    height: 100%;
+    border: none;
+    .el-tabs__content {
+      padding: 0;
+      padding-top: 15px;
+      height: calc(100% - 40px);
+      overflow: auto;
+      scrollbar-gutter: stable;
+      .el-tab-pane {
+        height: 100%;
+      }
+    }
+    .el-tabs__header {
+      border-bottom: 1px solid #e5e5e5;
+      background: transparent;
+      .el-tabs__item {
+        background: #f5f5f5;
+        border: 1px solid #e5e5e5;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        margin-right: 10px;
+        margin-top: 0;
+        margin-left: 0;
+      }
+      .el-tabs__item.is-active {
+        border: 1px solid #409eff;
+        border-bottom: none;
+        background: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.data-create {
+  background: #fff;
+  height: 100%;
+  // overflow: auto;
+  scrollbar-gutter: stable;
+  padding: 10px;
+  .data-create-title{
+    span{
+      font-weight: bold;
+      color:#1985F1;
+      margin-right: 10px;
+    }
+    font-size:20px ;
+    font-weight: bold;
+    height: 40px;
+    line-height: 30px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+
+
+  .btn{
+    padding-top: 20px;
+    border-top:1px solid #ddd;
+    text-align: center;
+  }
+}

@@ -1,0 +1,42 @@
+.event-option {
+  .collapse {
+    margin-bottom: 10px;
+    .event-li {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 10px;
+    }
+  }
+  ::v-deep .el-steps {
+    .el-step {
+      .el-step__icon {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+      }
+      &.is-vertical {
+        .el-step__line {
+          width: 2px;
+          top: 2px;
+          bottom: -2px;
+          left: 9px;
+        }
+        .el-step__title {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+  .event-step {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .empty {
+    text-align: center;
+    padding: 10px 0;
+    color: #999;
+  }
+}

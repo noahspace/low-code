@@ -1,0 +1,53 @@
+export default {
+  options: {
+    title: "分页",
+    eventEnums: [
+      { label: "分页条数改变", name: "size-change" },
+      { label: "当前页改变", name: "current-change" },
+    ],
+  },
+  attribs: {},
+  datas: [
+    {
+      label: "总条目数",
+      attribs: "total",
+      defaultValue: 0,
+      valueType: "number",
+      bindVariable: "",
+      whetherInitialize: true,
+      callback: "",
+      controlledComponents: [],
+    },
+    {
+      label: "当前页数",
+      attribs: "currentPage",
+      defaultValue: 1,
+      valueType: "number",
+      bindVariable: "",
+      whetherInitialize: true,
+      callback: "",
+      controlledComponents: [],
+    },
+    {
+      label: "每页显示条目个数",
+      attribs: "pageSize",
+      defaultValue: 20,
+      valueType: "number",
+      bindVariable: "",
+      whetherInitialize: true,
+      callback: "",
+      controlledComponents: [],
+    },
+    {
+      label: "每页显示个数选择器的选项",
+      attribs: "pageSizes",
+      defaultValue: [10, 20, 30, 40, 50],
+      valueType: "array",
+      bindVariable: "",
+      whetherInitialize: true,
+      callback: "",
+      controlledComponents: [],
+    },
+  ],
+  events: [],
+};

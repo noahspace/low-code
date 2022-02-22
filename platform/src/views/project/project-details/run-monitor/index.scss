@@ -1,0 +1,19 @@
+.sys-run {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  scrollbar-gutter: stable;
+  .sel-env {
+    position: absolute;
+    top: 5px;
+    right:20px;
+    .el-dropdown-link {
+      cursor: pointer;
+      color: #409EFF;
+    }
+    .el-icon-arrow-down {
+      font-size: 12px;
+    }
+  }
+
+}

@@ -1,0 +1,97 @@
+.picture-library-pane {
+  height: 100%;
+  > .header {
+    height: 40px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    color: #666;
+    .title {
+      font-weight: bold;
+    }
+    .close {
+      font-size: 22px;
+      cursor: pointer;
+      &:hover {
+        color: #3a85f3;
+      }
+    }
+  }
+  .back {
+    height: 40px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    color: #666;
+    i {
+      font-size: 20px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+  .body {
+    height: calc(100% - 40px);
+    padding: 20px;
+    .library {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      .lib-item {
+        border: 1px solid #e5e5e5;
+        border-radius: 6px;
+        padding: 10px 6px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        overflow: hidden;
+        .title {
+          margin-left: 6px;
+          display: block;
+          width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+    .img-list {
+      display: block;
+      gap: 10px;
+      column-count: 2;
+      .img-item {
+        background: #f5f5f5;
+        border-radius: 6px;
+        width: 100%;
+        height: 110px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        margin-bottom: 10px;
+        font-size: 0;
+        break-inside: avoid-column;
+        .preview {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+        .title {
+          color: #fff;
+          position: absolute;
+          left: 6px;
+          bottom: 6px;
+          text-shadow: 0 0 6px #000;
+          width: calc(100% - 12px);
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

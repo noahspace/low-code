@@ -1,0 +1,39 @@
+.operation-log {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: 20px 20px 0 20px;
+  background: #fff;
+  gap: 20px;
+  .filter {
+    padding: 10px 50px 10px 20px;
+    position: relative;
+    border: 1px solid #e5e5e5;
+    .filter-form {
+      display: flex;
+      flex-wrap: wrap;
+      .el-form-item {
+        margin-bottom: 0;
+        height: 50px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  .data {
+    background: #fff;
+    .content-wrap {
+      height: calc(100% - 60px);
+      background: #eee;
+      position: relative;
+      .el-table {
+        position: absolute;
+      }
+    }
+    .pagination {
+      height: 60px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

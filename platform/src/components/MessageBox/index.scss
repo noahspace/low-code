@@ -1,0 +1,27 @@
+
+.messBox{
+  .message-box {
+    display: flex;
+    justify-content: left;
+    .icon {
+      font-size: 30px;
+      &.el-icon-success {
+        color: #3a85f3;
+      }
+      &.el-icon-error {
+        color: #eb6d6d;
+      }
+    }
+
+    .message {
+      font-size: 16px;
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      margin-left: 10px;
+    }
+  }
+  .el-dialog__footer,.el-dialog__header{
+    display:none;
+  }
+}

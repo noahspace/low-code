@@ -1,0 +1,117 @@
+.icons-list {
+  height: 100%;
+  display: grid;
+  .content {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: 20px 20px 0 20px;
+    background: #fff;
+  }
+  .filter {
+    padding: 10px 50px 10px 20px;
+    border: 1px solid #e5e5e5;
+    position: relative;
+    .filter-form {
+      display: flex;
+      flex-wrap: wrap;
+      .el-form-item {
+        margin-bottom: 0;
+        height: 50px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  .data {
+    background: #fff;
+    .tools {
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .content {
+      height: calc(100% - 120px);
+      position: relative;
+      overflow: auto;
+      .content-wrap {
+        position: absolute;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        align-content: flex-start;
+        gap: 20px;
+        overflow: auto;
+        scrollbar-gutter: stable;
+
+        .item {
+          .icon-preview {
+            position: relative;
+            height: 220px;
+            border: 1px solid #e5e5e5;
+            box-sizing: border-box;
+            border-radius: 8px;
+            cursor: pointer;
+            overflow: hidden;
+            .subscript {
+              position: absolute;
+              background: #7dc1ff;
+              width: 50px;
+              height: 50px;
+              transform: rotate(45deg);
+              bottom: -25px;
+              right: -25px;
+              i {
+                color: #fff;
+                transform: rotate(-45deg);
+                position: absolute;
+                left: 3px;
+                top: 17px;
+              }
+            }
+            img{
+              width:100%;
+              height:auto;
+              display: inline-block;
+            }
+            &:hover {
+              box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.06);
+              transform: translate(-1px, -1px);
+            }
+          }
+
+          .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .title {
+              font-size: 16px;
+              margin: 8px 0 10px;
+            }
+            .user {
+              color: #999;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              i{
+                margin-right: 5px;
+              }
+              .el-icon-more {
+                font-size: 20px;
+                cursor: pointer;
+                &:hover {
+                  color: #3a85f3;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .pagination {
+      height: 60px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

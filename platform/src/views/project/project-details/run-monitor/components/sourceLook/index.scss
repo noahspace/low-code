@@ -1,0 +1,39 @@
+.source-info {
+  background: #fff;
+  height: 100%;
+  .label-title{
+    span{
+      font-weight: bold;
+      color:#1985F1;
+      margin-right: 10px;
+    }
+    div:first-child{
+      font-weight: bold;
+    }
+    height: 40px;
+    line-height:40px;
+    padding-left: 20px;
+    background: #F5F7FA;
+  }
+  .sources-div{
+     display: flex;
+     flex-wrap: wrap;
+     padding-left: 10px;
+    .info-div{
+      width:50%;
+      >div{
+        >div{
+          line-height: 40px;
+        }
+        display: flex;
+        div:first-child{
+          width:30%;
+          color: #666666;
+        }
+        div:last-child{
+          width:70%;
+        }
+      }
+    }
+  }
+}

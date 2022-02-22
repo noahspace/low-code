@@ -1,0 +1,36 @@
+.project-create {
+  background: #fff;
+  scrollbar-gutter: stable;
+  padding: 10px 0px 20px 0;
+  .formDiv{
+    padding-left:40px;
+    height:84%;
+    overflow: auto;
+    .files{
+      display: flex;
+      width: 40%;
+      justify-content: space-between;
+    }
+  }
+  .project-create-title{
+    span{
+      font-weight: bold;
+      color:#1985F1;
+      margin-right: 10px;
+    }
+    font-size:20px ;
+    font-weight: bold;
+    height: 40px;
+    line-height: 30px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+
+
+  .btn{
+    padding-top:20px;
+    border-top:1px solid #ddd;
+    text-align: center;
+  }
+}

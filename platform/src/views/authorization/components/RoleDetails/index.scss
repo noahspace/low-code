@@ -1,0 +1,11 @@
+.role-details {
+  .info {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .tools {
+    text-align: center;
+  }
+}

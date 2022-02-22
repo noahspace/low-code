@@ -1,0 +1,39 @@
+.base-info {
+  background: #fff;
+  height: 100%;
+  // overflow: auto;
+  scrollbar-gutter: stable;
+  padding: 10px;
+
+  .container{
+    display: flex;
+    display: flex;
+     flex-wrap: wrap;
+    .info-div{
+      width:50%;
+      >div{
+        >div{
+          line-height: 40px;
+        }
+        display: flex;
+        div:first-child{
+          width:30%;
+          color: #666666;
+        }
+        div:last-child{
+          width:70%;
+        }
+      }
+      .img-div{
+        img{
+          display: inline-block;
+          width:60px;
+          height: auto;
+        }
+      }
+
+    }
+  }
+
+
+}

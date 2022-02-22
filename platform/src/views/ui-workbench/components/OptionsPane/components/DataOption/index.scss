@@ -1,0 +1,23 @@
+.data-option {
+  .data-info {
+    display: flex;
+    .name {
+      font-weight: bold;
+      width: 120px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .desc {
+      width: 120px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .empty {
+    text-align: center;
+    padding: 10px 0;
+    color: #999;
+  }
+}

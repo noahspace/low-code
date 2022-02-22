@@ -1,0 +1,54 @@
+.authorization {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 10px;
+  .tree {
+    background: #fff;
+    padding: 10px;
+    overflow: auto;
+    scrollbar-gutter: stable;
+  }
+  .content {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+    .filter {
+      padding: 10px 50px 10px 10px;
+      background: #fff;
+      position: relative;
+      .filter-form {
+        display: flex;
+        flex-wrap: wrap;
+        .el-form-item {
+          margin-bottom: 0;
+          height: 50px;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+    .data {
+      background: #fff;
+      padding: 0 10px;
+      .tools {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .content-wrap {
+        height: calc(100% - 100px);
+        position: relative;
+        .el-table {
+          position: absolute;
+        }
+      }
+      .pagination {
+        height: 50px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

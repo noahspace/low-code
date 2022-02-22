@@ -1,0 +1,9 @@
+.components-manage {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .components-manage-main {
+    flex: auto;
+    overflow: hidden;
+  }
+}

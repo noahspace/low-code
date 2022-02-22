@@ -1,0 +1,161 @@
+.images-manage {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 20px;
+  .tree {
+    background: #fff;
+    padding: 20px;
+    overflow: auto;
+    scrollbar-gutter: stable;
+  }
+  .content {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: 20px 20px 0 20px;
+    background: #fff;
+    .filter {
+      padding: 10px 50px 10px 20px;
+      position: relative;
+      border: 1px solid #e5e5e5;
+      .filter-form {
+        display: flex;
+        flex-wrap: wrap;
+        .el-form-item {
+          margin-bottom: 0;
+          height: 50px;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+    .data {
+      background: #fff;
+      .tools {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .content {
+        height: calc(100% - 120px);
+        position: relative;
+        margin-bottom: 10px;
+        overflow:auto;
+        .content-wrap {
+          width: 100%;
+          position: absolute;
+          display: flex;
+          flex-wrap: wrap;
+          overflow: auto;
+          scrollbar-gutter: stable;
+          .item{
+            position: relative;
+            height: 200px;
+            margin: 5px;
+            flex-grow: 1;
+            .info{
+              position: relative;
+              cursor: pointer;
+              overflow: hidden;
+              height: 100%;
+              .subscript {
+                position: absolute;
+                background: #7dc1ff;
+                width: 50px;
+                height: 50px;
+                transform: rotate(45deg);
+                bottom: -25px;
+                right: -25px;
+                i {
+                  color: #fff;
+                  transform: rotate(-45deg);
+                  position: absolute;
+                  left: 3px;
+                  top: 17px;
+                }
+              }
+              div:first-child{
+                height: 100%;
+                position: relative;
+                img{
+                  display: block;
+                  height: 200px;
+                  min-width:100%;
+                  background-clip: padding-box;
+                  object-fit: cover;
+                }
+                .more{
+                  position: absolute;
+                  top:5px;
+                  right:10px;
+                  z-index: 1000;
+                  display: none;
+                  border-radius:4px;
+                  text-align: center;
+                  width:30px;
+                  height: 20px;
+                  line-height: 20px;
+                  i{
+                    color: #aaa;
+                    font-size: 20px;
+                    cursor: pointer;
+                  }
+                }
+                .more:hover{
+                  background: rgba($color: #000, $alpha: 0.3);
+                  i{
+                    color:#fff;
+                  }
+                }
+
+
+              }
+
+              .title{
+                position: absolute;
+                top:85%;
+                left:20px;
+                color: #fff;
+                display: none;
+                border-radius:4px;
+                text-align: center;
+                min-width:50px;
+                height: 20px;
+                line-height: 20px;
+                padding:0 10px;
+              }
+
+              shows{
+                display: block;
+              }
+              &:hover {
+                box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.06);
+                transform: translate(-1px, -1px);
+                .title{
+                   background: rgba($color: #000, $alpha: 0.3);
+                   display: block;
+                }
+                div:first-child{
+                  .more{
+                    display: block;
+
+                  }
+                }
+
+
+              }
+
+            }
+
+          }
+        }
+        .pagination {
+          height: 60px;
+          display: flex;
+          align-items: center;
+        }
+    }
+  }
+  }
+}

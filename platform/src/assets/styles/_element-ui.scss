@@ -1,0 +1,78 @@
+.el-dialog {
+  border-radius: 12px;
+  .el-dialog__header {
+    border-bottom: 1px solid #e5e5e5;
+    .el-dialog__title {
+      font-weight: bold;
+    }
+    .el-dialog__headerbtn .el-dialog__close {
+      color: #333;
+      font-size: 24px;
+    }
+  }
+  .el-dialog__body {
+    padding: 20px;
+  }
+}
+
+.el-table th.el-table__cell {
+  background-color: #fafafa;
+}
+
+.el-table-column--selection .cell {
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+}
+
+.el-input-group__append .el-button,
+.el-input-group__append .el-select,
+.el-input-group__prepend .el-button,
+.el-input-group__prepend .el-select {
+  margin: -7px -20px;
+}
+.el-input input {
+  color: #666;
+}
+.el-form--inline {
+  .el-form-item {
+    margin-right: 20px;
+    .el-form-item__label {
+      padding: 0 10px 0 0;
+      text-align: left;
+    }
+  }
+}
+.el-form {
+  .el-form-item {
+    .el-form-item__label {
+      text-align: left;
+    }
+  }
+}
+.el-dropdown {
+  color: #aaa;
+}
+#el-drawer__title {
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+}
+.disabled {
+  .el-upload--picture-card {
+    display: none;
+  }
+}
+.el-tag--small {
+  margin-right: 5px;
+}
+
+.el-tree--highlight-current .el-tree-node.is-current > .el-tree-node__content {
+  background-color: rgb(85, 158, 255) !important;
+  color: #fff;
+  .el-tree-node__expand-icon {
+    color: #fff;
+  }
+  .el-tree-node__expand-icon.is-leaf {
+    color: transparent;
+  }
+}
